@@ -24,7 +24,7 @@ Food.create!(
 )
 
 Food.create!(
-	name: 'Meuseukat ',
+	name: 'Meuseukat',
 	description: 
 		%{<p>
 			<em>Kue Tradisional Aceh</em>
@@ -48,4 +48,22 @@ Food.create!(
 			</p>},
 	image_url: 'kue.jpg',
 	price: 30000.00
+)
+
+Buyer.create!(
+	email: 'nurratnasarii@gmail.com',
+	phone: '0852-4442-3332',
+	address: 'Banda Aceh'
+)
+
+Buyer.create!(
+	email: 'qurin@gmail.com',
+	phone: '0857-7382-3432',
+	address: 'Surabaya'
+)
+
+Buyer.create!(
+	email: 'ajeng@gmail.com',
+	phone: '0812-4422-1233',
+	address: 'Bogor'
 )
