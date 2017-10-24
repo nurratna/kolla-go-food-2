@@ -1,0 +1,20 @@
++ iterasi 1
+	+ daftar makanan
+	+ pesan makanan
+	+ total harga
+	+ bayar
+	+ notif selesai 
+	+ histori order
+	tentukan model? dan atribut?
+
+	+ model user: id, username, password, fullname, no_hp, address
+		action: register, login, logout, edit_profile, reset_password
+
+	+ model food: id, category, name, price, detail, status
+		action: list, insert, update, delete
+
+	+ model order: id, user_id, order_datetime, total_price, payment_status, order_status
+		action: list_history, list_active, insert, update
+
+	+ model order_detail: order_id, food_id, price, portion, sub_total, note
+		
