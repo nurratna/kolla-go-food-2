@@ -4,8 +4,11 @@ class Buyer < ApplicationRecord
 		with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i,
 		message: "Email format not valid"
 	}
-	validates :phone, numericality: true
-	, length: { in: 10..12 }
+	validates :phone, numericality: true, length: { in: 10..12 }
+
+	def self.by_letter(letter)
+		where("email LIKE ?", "#{letter}%").order(:email)
+	end
 end
 
 # def is_a_valid_email?(email)
