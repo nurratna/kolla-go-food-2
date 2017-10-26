@@ -41,12 +41,16 @@ group :development, :test do
   # gem 'selenium-webdriver'
 
   # RSpec
-  gem 'rspec-rails', "~> 3.1.0"
+  gem 'rspec-rails', "~> 3.5.2"
   gem 'factory_girl_rails', "~> 4.4.1"
+
+  # controller-testing
+  gem 'rails-controller-testing'
 end
 
 group :test do
-  gem 'faker', "~> 1.4.3"
+  # gem 'faker', "~> 1.4.3"
+  gem 'faker', git: 'https://github.com/stympy/faker.git'
   gem 'capybara', "~> 2.4.3"
   gem 'database_cleaner', "~> 1.3.0"
   gem 'launchy', "~> 2.4.2"
