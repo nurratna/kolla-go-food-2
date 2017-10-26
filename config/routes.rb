@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'store#index', as: 'store_index'
+
   resources :buyers
   resources :foods
   get 'home/goodbye'

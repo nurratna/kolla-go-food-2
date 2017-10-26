@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.foods, .buyers {
+/*.foods, .buyers {
 	table {
 		border-collapse: collapse;
 	}
@@ -61,3 +61,4 @@
 		background: #DCDCDC	
 	}
 }
+*/
