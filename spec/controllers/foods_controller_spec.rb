@@ -22,6 +22,7 @@ describe FoodsController do
 				get :index
 				expect(assigns(:foods)).to match_array([nasi_uduk, kerak_telor])
 			end
+			
 			it 'renders the :index template' do
 				get :index
 				expect(response).to render_template :index
