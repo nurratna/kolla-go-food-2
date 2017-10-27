@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :buyers
   resources :foods
+  resources :line_items
+  
   get 'home/goodbye'
 
   get 'home/hello'
